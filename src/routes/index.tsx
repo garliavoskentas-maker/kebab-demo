@@ -6,16 +6,16 @@ import {
 } from "lucide-react";
 import { cn } from "@/lib/utils";
 
-import logoAsset from "@/assets/logo.png.asset.json";
-import heroAsset from "@/assets/hero.jpg.asset.json";
-import wrapAsset from "@/assets/wrap.jpg.asset.json";
-import pitaAsset from "@/assets/pita.jpg.asset.json";
-import plateAsset from "@/assets/plate.jpg.asset.json";
-import friesAsset from "@/assets/fries.jpg.asset.json";
-import burgerAsset from "@/assets/burger.jpg.asset.json";
-import cokeAsset from "@/assets/coke.png.asset.json";
-import spriteAsset from "@/assets/sprite.png.asset.json";
-import fantaAsset from "@/assets/fanta.png.asset.json";
+const logoAsset = "/logo.png";
+const heroAsset = "/hero.jpg";
+const wrapAsset = "/wrap.jpg";
+const pitaAsset = "/pita.jpg";
+const plateAsset = "/plate.jpg";
+const friesAsset = "/fries.jpg";
+const burgerAsset = "/burger.jpg";
+const cokeAsset = "/coke.png";
+const spriteAsset = "/sprite.png";
+const fantaAsset = "/fanta.png";
 
 export const Route = createFileRoute("/")({
   head: () => ({
