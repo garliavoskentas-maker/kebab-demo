@@ -54,7 +54,7 @@ const products: Product[] = [
     desc: "Plonas lavašas, kepta vištiena, šviežios daržovės ir naminis česnakinis padažas — klasikinis pasirinkimas kiekvienai dienai.",
     ingredients: ["Lavašas", "Marinuota vištiena", "Pomidorai", "Agurkai", "Salotos", "Svogūnai", "Česnakinis padažas"],
     price: "6,90 €",
-    img: wrapAsset.url,
+    img: wrapAsset,
   },
   {
     id: "pita",
@@ -63,7 +63,7 @@ const products: Product[] = [
     desc: "Šviežiai kepta pita, sultinga vištiena, traškios daržovės ir tirštas jogurtinis padažas.",
     ingredients: ["Pita", "Vištiena", "Pomidorai", "Raudoni svogūnai", "Salotos", "Jogurtinis padažas"],
     price: "7,40 €",
-    img: pitaAsset.url,
+    img: pitaAsset,
   },
   {
     id: "plate",
@@ -72,7 +72,7 @@ const products: Product[] = [
     desc: "Mėsos gausa, traškios gruzdintos bulvytės, šviežios daržovės ir du naminiai padažai. Sotus pasirinkimas tikriems mėgėjams.",
     ingredients: ["Kebabo mėsa", "Gruzdintos bulvytės", "Salotos", "Pomidorai", "Česnakinis padažas", "Aštrus padažas"],
     price: "8,90 €",
-    img: plateAsset.url,
+    img: plateAsset,
   },
   {
     id: "burger",
@@ -81,7 +81,7 @@ const products: Product[] = [
     desc: "100% jautienos kotletas, lydytas sūris, traškios salotos, pomidorai ir firminis burgerio padažas.",
     ingredients: ["Brioche bandelė", "Jautienos kotletas", "Cheddar sūris", "Salotos", "Pomidorai", "Burgerio padažas"],
     price: "7,90 €",
-    img: burgerAsset.url,
+    img: burgerAsset,
   },
   {
     id: "fries",
@@ -90,14 +90,14 @@ const products: Product[] = [
     desc: "Šviežiai gruzdintos bulvytės su jūros druska ir žalumynais. Idealus priedas prie bet kurio patiekalo.",
     ingredients: ["Bulvės", "Saulėgrąžų aliejus", "Jūros druska", "Petražolės"],
     price: "3,50 €",
-    img: friesAsset.url,
+    img: friesAsset,
   },
 ];
 
 const drinks = [
-  { name: "Coca-Cola", price: "2,20 €", img: cokeAsset.url },
-  { name: "Sprite", price: "2,20 €", img: spriteAsset.url },
-  { name: "Fanta", price: "2,20 €", img: fantaAsset.url },
+  { name: "Coca-Cola", price: "2,20 €", img: cokeAsset },
+  { name: "Sprite", price: "2,20 €", img: spriteAsset },
+  { name: "Fanta", price: "2,20 €", img: fantaAsset },
 ];
 
 const nav = [
@@ -125,7 +125,7 @@ function Home() {
         <div className="mx-auto flex max-w-7xl items-center justify-between gap-4 px-4 py-2 sm:px-6 lg:px-8">
           <a href="#pradzia" className="flex items-center gap-2.5 min-w-0">
             <span className="grid h-20 w-20 lg:h-24 lg:w-24 shrink-0 place-items-center rounded-xl bg-white/10">
-              <img src={logoAsset.url} alt="Flame Kebab logo" className="h-16 w-16 lg:h-20 lg:w-20 invert" />
+              <img src={logoAsset} alt="Flame Kebab logo" className="h-16 w-16 lg:h-20 lg:w-20 invert" />
             </span>
             <span className="truncate text-lg font-extrabold tracking-tight">Flame Kebab</span>
           </a>
@@ -159,7 +159,7 @@ function Home() {
 
       {/* HERO */}
       <section id="pradzia" className="relative isolate min-h-[92vh] flex items-center pt-24 lg:pt-28">
-        <img src={heroAsset.url} alt="Šviežias kebabas su padažais" className="absolute inset-0 -z-10 h-full w-full object-cover" />
+        <img src={heroAsset} alt="Šviežias kebabas su padažais" className="absolute inset-0 -z-10 h-full w-full object-cover" />
         <div className="absolute inset-0 -z-10 bg-gradient-to-b from-black/65 via-black/45 to-black/70" />
         <div className="mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8 py-20 text-white">
           <div className="max-w-2xl fade-up pl-6 sm:pl-7 lg:pl-8">
@@ -367,7 +367,7 @@ function Home() {
           <div>
             <div className="flex items-center gap-2">
               <span className="grid h-20 w-20 lg:h-24 lg:w-24 shrink-0 place-items-center rounded-xl bg-white/10">
-                <img src={logoAsset.url} alt="" className="h-16 w-16 lg:h-20 lg:w-20 invert" />
+                <img src={logoAsset} alt="" className="h-16 w-16 lg:h-20 lg:w-20 invert" />
               </span>
               <span className="text-lg font-extrabold">Flame Kebab</span>
             </div>
